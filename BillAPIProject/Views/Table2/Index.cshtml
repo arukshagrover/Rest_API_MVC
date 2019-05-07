@@ -1,0 +1,233 @@
+﻿@model IEnumerable<BillAPIProject.Models.Table2>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PartnerId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PartnerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PartnerBillableAccountId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerCompanyName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MpnId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InvoiceNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ChargeStartDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ChargeEndDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SubscriptionId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SubscriptionName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SubscriptionDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ServiceName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ServiceType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ResourceGuid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ResourceName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Region)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sku)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DetailLineItemId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ConsumedQuantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IncludedQuantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OverageQuantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ListPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PretaxCharges)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TaxAmount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PostTaxTotal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Currency)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PretaxEffectiveRate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PostTaxEffectiveRate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ChargeType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DomainName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BillingCycleType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Unit)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PartnerId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PartnerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PartnerBillableAccountId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerCompanyName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MpnId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InvoiceNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChargeStartDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChargeEndDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SubscriptionId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SubscriptionName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SubscriptionDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ServiceName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ServiceType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResourceGuid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResourceName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Region)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sku)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DetailLineItemId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ConsumedQuantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IncludedQuantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OverageQuantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ListPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PretaxCharges)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaxAmount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PostTaxTotal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Currency)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PretaxEffectiveRate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PostTaxEffectiveRate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChargeType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DomainName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BillingCycleType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Unit)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Row">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Row">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Row">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

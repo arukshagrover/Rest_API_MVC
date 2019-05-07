@@ -1,0 +1,22 @@
+﻿@model Result1
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script>
+    $(document).ready(function () {
+        //Call EmpDetails jsonResult Method this two
+        $.getJSON("ReturnData", function (json) {
+            var tr;
+            console.log(json.length);
+            for (var i = 0; i < json.length; i++) {
+                tr = $('<tr/>');
+                tr.append("<td>" + json[i].CustName + "</td>");
+                tr.append("<td>" + json[i].SubsName + "</td>");
+                tr.append("<td>" + json[i].UnitP + "</td>");
+                tr.append("<td>" + json[i].ct + "</td>");
+                $('table').append(tr);
+            }
+})
+
+        
+    });
+</script>
+

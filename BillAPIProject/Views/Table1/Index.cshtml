@@ -1,0 +1,256 @@
+﻿@model Result1
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<h2>Index</h2>
+<form method="post">
+    <fieldset>
+        <legend>Add Customer</legend>
+        <div>
+            <label for="Date">Date:</label>
+            <input type="datetime" name="Date" value="" />
+        </div>
+
+    </fieldset>
+</form>
+
+
+
+    <p>
+        @foreach (var item in Model.CustName)
+        {
+            @item  
+        }
+    </p>
+    <p>
+        @foreach (var item in Model.SubsName)
+        {
+            @item  
+        }
+    </p>
+    <p>
+        @foreach (var item in Model.UnitP)
+        {
+            @item 
+        }
+    </p>
+    <p>
+        @foreach (var item in Model.ct)
+        {
+            @item
+        }
+    </p>
+
+
+
+
+
+
+@*
+
+    <table>
+        <tbody>
+            @foreach (var items in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.Display(items)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SubscriptionName)
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UnitPrice)
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+
+
+
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PartnerId)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.CustomerId)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.CustomerName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.MpnId)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.OrderId)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.SyndicationPartnerSubscriptionNumber)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.OfferId)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.DurableOfferId)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.OfferName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.SubscriptionStartDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.SubscriptionEndDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ChargeStartDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ChargeEndDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ChargeType)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.UnitPrice)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Quantity)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Amount)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.TotalOtherDiscount)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Subtotal)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Tax)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.TotalForCustomer)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Currency)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.DomainName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.SubscriptionName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.SubscriptionDescription)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.BillingCycleType)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PartnerId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CustomerId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CustomerName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.MpnId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.OrderId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SyndicationPartnerSubscriptionNumber)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.OfferId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DurableOfferId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.OfferName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SubscriptionStartDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SubscriptionEndDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ChargeStartDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ChargeEndDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ChargeType)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.UnitPrice)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Quantity)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Amount)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TotalOtherDiscount)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Subtotal)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Tax)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TotalForCustomer)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Currency)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DomainName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SubscriptionName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SubscriptionDescription)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.BillingCycleType)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.SubscriptionId">Edit</a> |
+                            <a asp-action="Details" asp-route-id="@item.SubscriptionId">Details</a> |
+                            <a asp-action="Delete" asp-route-id="@item.SubscriptionId">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+*@

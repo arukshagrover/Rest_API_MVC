@@ -1,0 +1,222 @@
+﻿@model BillAPIProject.Models.Table2
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Table2</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PartnerId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PartnerId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PartnerName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PartnerName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PartnerBillableAccountId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PartnerBillableAccountId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerCompanyName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CustomerCompanyName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MpnId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MpnId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.InvoiceNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.InvoiceNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ChargeStartDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ChargeStartDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ChargeEndDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ChargeEndDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SubscriptionId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SubscriptionId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SubscriptionName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SubscriptionName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SubscriptionDescription)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SubscriptionDescription)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OrderId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ServiceName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ServiceName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ServiceType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ServiceType)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ResourceGuid)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ResourceGuid)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ResourceName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ResourceName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Region)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Region)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Sku)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Sku)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DetailLineItemId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DetailLineItemId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ConsumedQuantity)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ConsumedQuantity)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IncludedQuantity)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IncludedQuantity)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OverageQuantity)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OverageQuantity)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ListPrice)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ListPrice)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PretaxCharges)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PretaxCharges)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TaxAmount)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TaxAmount)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PostTaxTotal)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PostTaxTotal)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Currency)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Currency)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PretaxEffectiveRate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PretaxEffectiveRate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PostTaxEffectiveRate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PostTaxEffectiveRate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ChargeType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ChargeType)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CustomerId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DomainName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DomainName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BillingCycleType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BillingCycleType)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Unit)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Unit)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Row">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
